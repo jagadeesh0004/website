@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-<h1>WELCOME TO JJK WORLD</h1>
-<a href="https://zorox.to/watch/jujutsu-kaisen-0-3w5y/ep-1"><img src="https://imgs.search.brave.com/FXOX_NSP9l7Ng5GQqZa1uPCp0YFnBZLjdevF_-3wOXY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly82NC5t/ZWRpYS50dW1ibHIu/Y29tLzg2MTJiNTM0/Y2Y2ZGIxMDlkMjk2/MTE3ZjM3YWI5MGFl/LzE3OGNlMWI2NmUz/ODAxZmItODAvczUw/MHg3NTAvNjA0MjQx/NWEwMGNkNGQzNmU2/Y2VkODE3YWEwYjQy/NDk4MDYyMWNlMi5n/aWZ2" width="200">
-</a>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="your_login_action_url" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
